@@ -68,12 +68,12 @@ ul {
    justify-content: space-between;
    align-items: center;
    color: gray;
-   padding: 20px;
 }
 
 .sec1 .left {
    position: relative;
    text-align: center;
+   width: 150px;
 }
 
 .sec1 .left .fa-magnifying-glass {
@@ -86,12 +86,9 @@ ul {
 }
 
 .sec1 .left input[type="text"] {
-   position: absolute;
-   top: 50%;
-   transform: translateY(-50%);
    border: none;
    outline: none;
-   transition: all 0.3s ease-in-out;
+   transition: 0.3s;
    padding: 20px;
 }
 
