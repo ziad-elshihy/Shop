@@ -107,13 +107,6 @@ ul {
    transform: translateX(20px);
    color: #aaa;
 }
-
-
-
-.sec1 .right {
-   font-size: small;
-}
-
 .sec1 .right>.fa-user,
 .fa-heart,
 .fa-cart-shopping {
@@ -133,7 +126,9 @@ ul {
    padding: 5px 10px;
    color: rgb(0, 0, 0);
 }
-
+.sec1 .right i {
+   font-size: 17px;
+}
 
 
 /* SECTION . NAV */
@@ -620,26 +615,17 @@ select:hover {
    background-color: darkmagenta;
    color: white;
    border: none;
-   right: 0;
+   right: 1px;
    top: 1px;
    border-radius: 2px;
    border: #aaa 1px solid;
    transition: 0.3s;
 }
-
-@media (max-width: 767px) {
-   .sec7 .ls5 li .sub .inp .btn {
-      right: 0;
-   }
-}
-
 .sec7 .ls5 li .sub .inp .btn:hover {
    cursor: pointer;
    background-color: rgb(116, 9, 116);
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
-
-
 .sec7 .ls5 li i span {
    margin-left: 5px;
    font-family: Arial, Helvetica, sans-serif;
