@@ -578,6 +578,7 @@ select:hover {
 .sec7 ul .li1 {
    color: rgb(63, 59, 59);
    font-size: large;
+   padding-bottom: 10px;
 }
 
 .sec7 .ls5 {
@@ -600,12 +601,12 @@ select:hover {
 
 .sec7 .ls5 li .sub .inp {
    position: relative;
-   min-width: 300px;
+   width: 250px;
 }
 
 .sec7 .ls5 li .sub .inp .txt {
    position: absolute;
-   max-width: 100%;
+   width: 100%;
    border: #aaa 1px solid;
    padding: 15px 10px;
    border-radius: 2px;
@@ -619,7 +620,7 @@ select:hover {
    background-color: darkmagenta;
    color: white;
    border: none;
-   right: 110px;
+   right: 0;
    top: 1px;
    border-radius: 2px;
    border: #aaa 1px solid;
@@ -628,7 +629,7 @@ select:hover {
 
 @media (max-width: 767px) {
    .sec7 .ls5 li .sub .inp .btn {
-      right: 156px;
+      right: 0;
    }
 }
 
