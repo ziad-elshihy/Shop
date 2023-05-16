@@ -373,14 +373,17 @@ select:hover {
 .sec4 .left,
 .sec4 .mid,
 .sec4 .right{
+   width: 100%;
    overflow: hidden;
+   border-radius: 10px;
 }
 .sec4 .left img,
 .sec4 .mid img,
 .sec4 .right img {
    filter: brightness(70%);
-   max-width: 100%;
+   width: 100%;
    transition: 0.5s;
+   border-radius: 10px;
 }
 
 .sec4 img:hover {
