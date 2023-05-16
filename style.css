@@ -251,7 +251,6 @@ select:hover {
    background-color: #a6f3ed;
    position: relative;
 }
-
 .sec2 .container {
    display: flex;
    justify-content: space-around;
@@ -371,18 +370,21 @@ select:hover {
    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
    gap: 20px;
 }
-
+.sec4 .left,
+.sec4 .mid,
+.sec4 .right{
+   overflow: hidden;
+}
 .sec4 .left img,
 .sec4 .mid img,
 .sec4 .right img {
    filter: brightness(70%);
    max-width: 100%;
-   border-radius: 10px;
    transition: 0.5s;
 }
 
 .sec4 img:hover {
-   transform: scale(1.05);
+   transform: scale(1.1);
 }
 
 .sec4 .left,
