@@ -61,6 +61,7 @@ ul {
 
 .sec1 {
    border-bottom: 1px solid rgba(128, 128, 128, 0.144);
+   padding: 15px 0;
 }
 
 .sec1 .container {
@@ -73,7 +74,7 @@ ul {
 .sec1 .left {
    position: relative;
    text-align: center;
-   width: 150px;
+   width: 100px;
 }
 
 .sec1 .left .fa-magnifying-glass {
@@ -89,7 +90,7 @@ ul {
    border: none;
    outline: none;
    transition: 0.3s;
-   padding: 20px;
+   padding: 0 20px;
 }
 
 .sec1 .left input[type="text"]:focus {
@@ -140,12 +141,6 @@ ul {
    text-align: center;
 }
 @media (min-width: 768px) {
-   .nav .container {
-      width: 60%;
-   }
-}
-
-@media (min-width: 768px) {
    .fa-bars {
       display: none;
    }
@@ -157,10 +152,15 @@ ul {
 .fa-bars:hover {
    color: black;
 }
-@media (min-width: 768px) {
+.fa-xmark {
+   display: none;
+}
+@media (max-width: 767px) {
    .fa-xmark {
-      display: none;
+      display: block;
+      color: gray;
       cursor: pointer;
+      font-size: 22px;
    }
 }
 @media (max-width: 767px) {
@@ -170,12 +170,11 @@ ul {
 
    .nav .container {
       height: 100%;
-      width: 0;
+      width: 300px;
       position: fixed;
       top: 0;
-      right: 0;
+      right: -310px;
       z-index: 1000;
-      overflow-x: hidden;
       background-color:rgba(255, 255, 255, 0.863);
       transition: 0.5s;
       flex-direction: column;
@@ -186,7 +185,9 @@ ul {
       justify-content: flex-start;
       gap: 25px;
    }
-
+.lefttoright {
+   right: 0 !important;
+}
 .nav .container h5{
       color: black;
       transition: 0.5s;
