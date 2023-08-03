@@ -67,7 +67,7 @@
                adipisicing
                <br>Lorem, ipsum dolor sit amet consectetur adipisicing.
             </p>
-            <h4>$50.00</h4>
+            <h4 id="price">$50.00</h4>
             <input type="radio" value="Small" id="Small" name="size">
             <label for="Small">Small</label>
             <input type="radio" value="Medium" id="Medium" name="size">
@@ -79,7 +79,7 @@
             <div>
                <div class="number-control">
                   <button id="decrement">-</button>
-                  <input type="number" id="number" value="2" readonly>
+                  <p id="_value">1</p>
                   <button id="increment">+</button>
                </div>
             </div>
@@ -165,7 +165,30 @@
       </h6>
    </section>
    <script src="./script.js"></script>
+   <script>
+      let increment = document.getElementById('increment')
+      let decrement = document.getElementById('decrement')
+      let quantity = document.getElementById('_value');
+      let price = document.getElementById('price')
+      let value = 0
+      let total = 50
+      increment.addEventListener('click', () => {
+         value = value + 1
+         quantity.innerHTML = value
+         total = value * 50
+         price.innerHTML = `$${total}.00`
 
+      })
+      decrement.addEventListener('click', () => {
+         value = value - 1
+         if(value <= 0) {
+            return value = 0
+         }
+         quantity.innerHTML = value
+         total = value * 50
+         price.innerHTML = `$${total}.00`
+      })
+   </script>
 </body>
 
 </html>

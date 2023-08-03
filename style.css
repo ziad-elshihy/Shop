@@ -54,7 +54,11 @@ ul {
       width: 1170px;
    }
 }
-
+#_value {
+   padding: 0 10px;
+   display: flex;
+   align-items: center;
+   margin: 0;}
 .fa-heart:hover {
    color: red;
 }
